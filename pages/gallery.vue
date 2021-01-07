@@ -3,7 +3,18 @@
     <!--Crop ratio for thumbnails = 1:1, height = 500px x 500px-->
 
     <div class="gallery">
-        <div v-for="card in galleryCards" :key="card.id">
+        <!-- <b-container fluid> -->
+            <b-row no-gutters>
+                <b-col md="6" lg="4" xl="3" v-for="card in galleryCards" :key="card.id">
+                    <gallery-card
+                        :card="card"
+                        :key="card.id"
+                    >
+                    </gallery-card>
+                </b-col>
+            </b-row>
+        <!-- </b-container> -->
+        <!-- <div v-for="card in galleryCards" :key="card.id">
 
             <gallery-card
                 :card="card"
@@ -11,7 +22,7 @@
             >
             </gallery-card>
 
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -35,6 +46,7 @@
                             'assets/gallery/rhinestone_bride/thumbnail_7',
                             'assets/gallery/rhinestone_bride/thumbnail_9'
                         ],
+                        featured: 'assets/gallery/rhinestone_bride/thumbnail_6',
                         cardTitle: 'Cathedral Veil with Rhinestone Embellishments'
                     },
                     {
@@ -47,6 +59,7 @@
                             'assets/gallery/shelby/thumbnail_6',
                             'assets/gallery/shelby/thumbnail_5'
                         ],
+                        featured: 'assets/gallery/shelby/thumbnail_1',
                         cardTitle: 'Hand Beaded Angel Cut Veil'
                     },
                     {
@@ -59,6 +72,7 @@
                             'assets/gallery/shelby_flower_girl/thumbnail_5',
                             'assets/gallery/shelby_flower_girl/thumbnail_3'
                         ],
+                        featured: 'assets/gallery/shelby_flower_girl/thumbnail_1',
                         cardTitle: 'Flower Girl Dress with matching Halo & Diaper Cover'
                     },
                     {
@@ -69,6 +83,7 @@
                             'assets/gallery/renee/thumbnail_3',
                             'assets/gallery/renee/thumbnail_4'
                         ],
+                        featured: 'assets/gallery/renee/thumbnail_1',
                         cardTitle: 'Cathedral Veil with Lace Trim'
                     },
                     {
@@ -80,6 +95,7 @@
                             'assets/gallery/brooke/thumbnail_4',
                             'assets/gallery/brooke/thumbnail_2'
                         ],
+                        featured: 'assets/gallery/brooke/thumbnail_6',
                         cardTitle: 'Cathedral Veil with Pearl Accents'
                     },
                     {
@@ -91,6 +107,7 @@
                             'assets/gallery/sarah_veil2/thumbnail_4',
                             'assets/gallery/sarah_veil2/thumbnail_5'
                         ],
+                        featured: 'assets/gallery/sarah_veil2/thumbnail_1',
                         cardTitle: 'Floral Halo Veil'
                     },
                     {
@@ -103,6 +120,7 @@
                             'assets/gallery/nicki/thumbnail_4',
                             'assets/gallery/nicki/thumbnail_6'
                         ],
+                        featured: 'assets/gallery/nicki/thumbnail_1',
                         cardTitle: 'Tea Length Wedding Dress & Birdcage Veil'
                     },
                     {
@@ -113,6 +131,7 @@
                             'assets/gallery/black_red_bride/thumbnail_4',
                             'assets/gallery/black_red_bride/thumbnail_3'
                         ],
+                        featured: 'assets/gallery/black_red_bride/thumbnail_2',
                         cardTitle: 'Birdcage Veil with Feather Embellishment'
                     },
                     {
@@ -125,6 +144,7 @@
                             'assets/gallery/shandra/thumbnail_5',
                             'assets/gallery/shandra/thumbnail_6'
                         ],
+                        featured: 'assets/gallery/shandra/thumbnail_1',
                         cardTitle: 'Lace Cathedral Veil'
                     },
                     {
@@ -137,6 +157,7 @@
                             'assets/gallery/shandra_halos/thumbnail_2',
                             'assets/gallery/shandra_halos/thumbnail_3'
                         ],
+                        featured: 'assets/gallery/shandra_halos/thumbnail_5',
                         cardTitle: 'Flower Girl Floral Halo'
                     },
                     {
@@ -149,6 +170,7 @@
                             'assets/gallery/sarah/thumbnail_5',
                             'assets/gallery/sarah/thumbnail_6'
                         ],
+                        featured: 'assets/gallery/sarah/thumbnail_1',
                         cardTitle: 'Floral Halo Veil'
                     },
 
@@ -160,6 +182,7 @@
                             'assets/gallery/amanda/thumbnail_3',
                             'assets/gallery/amanda/thumbnail_4'
                         ],
+                        featured: 'assets/gallery/amanda/thumbnail_1',
                         cardTitle: 'Double Tiered Veil with Pearl Edging'
                     },
                     {
@@ -171,6 +194,7 @@
                             'assets/gallery/tacy/thumbnail_4',
                             'assets/gallery/tacy/thumbnail_5'
                         ],
+                        featured: 'assets/gallery/tacy/thumbnail_1',
                         cardTitle: 'Wedding Dress with Asymmetrical Hem & Birdcage Veil'
                     },
                     {
@@ -181,6 +205,7 @@
                             'assets/gallery/kelvin/thumbnail_4',
                             'assets/gallery/kelvin/thumbnail_1',
                         ],
+                        featured: 'assets/gallery/kelvin/thumbnail_3',
                         cardTitle: 'Button Down Vest with Decorative Pockets'
                     }
                 ]

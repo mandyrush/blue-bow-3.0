@@ -14,10 +14,10 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/scss/custom.scss'],
+  css: ['~/assets/scss/main'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~/plugins/bootstrap.js'],
+  plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -44,7 +44,7 @@ export default {
   },
   // use these settings to use custom css
   bootstrapVue: {
-    bootstrapCSS: false,
+    bootstrapCSS: true,
     icons: true,
   },
 
