@@ -15,12 +15,12 @@
 
     <div class="card-title content is-large">{{ card.cardTitle }}</div>
 </div> -->
-
-<div class="gallery-card">
-    <!-- <div class="gallery-card" :style="{ backgroundImage: `url(${featuredPath()})`}"> -->
-    <b-img :src="require(`~/${featuredPath()}`)" :alt="card.cardTitle" fluid></b-img>
-    <div class="card-title">{{ card.cardTitle }}</div>
-</div>
+<NuxtLink :to="galleryItemPath">
+    <div class="gallery-card">
+        <b-img :src="require(`~/${featuredPath()}`)" :alt="card.cardTitle" fluid class="card-image"></b-img>
+        <div class="card-title">{{ card.cardTitle }}</div>
+    </div>
+</NuxtLink>
 </template>
 
 <script>
@@ -37,6 +37,9 @@
             featuredImagePath() {
                 return this.card.thumbnails[this.thumbnailNumber] + '_lg.jpg';
             },
+            galleryItemPath() {
+                return '/gallery/' + this.card.id;
+            }
         },
         methods: {
             featuredPath() {
@@ -51,3 +54,28 @@
         },
     }
 </script>
+
+<style lang="scss">
+    .gallery-card {
+        position: relative;
+        .card-image {
+            filter: grayscale(100%);
+        }
+        .card-title {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 25%;
+            text-align: center;
+            margin-bottom: 0;
+            padding: 2rem;
+            color: #ffffff;
+        }
+    }
+    .gallery-card:hover .card-image {
+        filter: none;
+    }
+</style>

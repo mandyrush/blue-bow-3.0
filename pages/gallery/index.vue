@@ -3,36 +3,26 @@
     <!--Crop ratio for thumbnails = 1:1, height = 500px x 500px-->
 
     <div class="gallery">
-        <!-- <b-container fluid> -->
-            <b-row no-gutters>
-                <b-col md="6" lg="4" xl="3" v-for="card in galleryCards" :key="card.id">
-                    <gallery-card
-                        :card="card"
-                        :key="card.id"
-                    >
-                    </gallery-card>
-                </b-col>
-            </b-row>
-        <!-- </b-container> -->
-        <!-- <div v-for="card in galleryCards" :key="card.id">
-
-            <gallery-card
-                :card="card"
-                :key="card.id"
-            >
-            </gallery-card>
-
-        </div> -->
+        <b-row no-gutters>
+            <b-col md="6" lg="4" xl="3" v-for="card in galleryCards" :key="card.id">
+                <gallery-card
+                    :card="card"
+                    :key="card.id"
+                >
+                </gallery-card>
+            </b-col>
+        </b-row>
     </div>
 </template>
 
 <script>
-    import GalleryCard from '../components/GalleryCard'
+    import GalleryCard from '~/components/GalleryCard'
 
     export default {
         components: {
             GalleryCard
         },
+        layout: 'interior',
         data() {
             return {
                 galleryCards: [
