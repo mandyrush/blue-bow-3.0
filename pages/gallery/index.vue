@@ -203,3 +203,9 @@
         }
     }
 </script>
+
+<style lang="scss">
+    .gallery {
+        background-color: #0d0d0d;
+    }
+</style>

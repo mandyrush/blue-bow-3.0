@@ -1,6 +1,6 @@
 <template>
 <div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
+  <b-navbar toggleable="lg" type="dark">
     <b-navbar-brand href="/">Blue Bow Fashion</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,5 +14,13 @@
     </b-collapse>
   </b-navbar>
 </div>
-
 </template>
+
+<style lang="scss">
+  .navbar {
+    background-color: #2f6690;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+</style>

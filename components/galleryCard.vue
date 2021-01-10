@@ -71,8 +71,11 @@
             height: 25%;
             text-align: center;
             margin-bottom: 0;
-            padding: 2rem;
+            padding: 1rem;
             color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     .gallery-card:hover .card-image {
