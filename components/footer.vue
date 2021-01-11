@@ -2,7 +2,7 @@
     <footer>
         <b-container>
             <b-row align-h="center">
-                <b-col cols="auto">
+                <b-col cols="auto" class="mb-3 mb-md-0">
                     <b-link href="/">
                         <img src="~/assets/bb_logo2.png" alt="Blue Bow Fashion Logo" fluid>
                     </b-link>
