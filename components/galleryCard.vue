@@ -1,20 +1,4 @@
 <template>
-<!-- <div class="gallery-card">
-
-    <div class="images">
-        <div class="featured-image">
-            <img :src="require(`~/${featuredImagePath}`)" :alt="card.cardTitle">
-        </div>
-
-        <div class="thumbnails">
-            <div class="thumbnail" v-for="(thumbnail, index) in card.thumbnails" :key="index">
-                <img :src="require(`~/${thumbnailPath(thumbnail)}`)" alt="" @click="setFeaturedImage(index)">
-            </div>
-        </div>
-    </div>
-
-    <div class="card-title content is-large">{{ card.cardTitle }}</div>
-</div> -->
 <NuxtLink :to="galleryItemPath">
     <div class="gallery-card">
         <b-img :src="require(`~/${featuredPath()}`)" :alt="card.cardTitle" fluid class="card-image"></b-img>
@@ -80,5 +64,13 @@
     }
     .gallery-card:hover .card-image {
         filter: none;
+    }
+
+    @media (min-width: 1200px) {
+        .gallery-card {
+            .card-title {
+                height: 30%;
+            }
+        }
     }
 </style>

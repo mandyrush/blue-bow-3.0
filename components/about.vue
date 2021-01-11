@@ -1,36 +1,29 @@
 <template>
     <div class="about-content" id="about-me">
-        <b-container>
-            <b-row align-h="center" align-v="center">
-                <b-col md="4">
-                    <b-img src="~/assets/linda.jpg" alt="Image of Linda Pinney" fluid class="linda-img"></b-img>
-                </b-col>
-                <b-col md="5" offset-md="1">
-                    <div class="about-linda">
-
-                        <header class="title section-title">About Me</header>
-
-                        <span>
-                            My name is Linda and I love making wedding veils and accessories. In fact it's on my list of
-                            things I love the most right along with my husband, my kids and my cats (aka my other furry
-                            kids). In my spare time you'll find me in my sewing room drinking coffee from my blue kitty
-                            mug, watching Die Hard and working on my latest project.
-                        </span>
-
-                    </div>
-                </b-col>
-            </b-row>
-        </b-container>
+        <b-row align-h="center" align-v="center" no-gutters>
+            <b-col md="6" lg="5" offset-lg="1">
+                <div class="about-linda">
+                    <h2 class="title section-title">About Me</h2>
+                    <p>
+                        My name is Linda and I love making wedding veils and accessories. In fact it's on my list of
+                        things I love the most right along with my husband, my kids and my cats (my other furry
+                        kids). In my spare time you'll find me in my sewing room drinking coffee from my blue kitty
+                        mug, watching Die Hard and working on my latest project.
+                    </p>
+                </div>
+            </b-col>
+            <b-col md="6">
+                <b-img src="~/assets/linda_img5.png" alt="Image of Linda Pinney" fluid class="linda-img"></b-img>
+            </b-col>
+        </b-row>
     </div>
 </template>
 
 <style lang="scss">
     .about-content {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        background-image: linear-gradient(to bottom right, rgba(22, 66, 91, 0.5), #ffffff, #FDF3EB);
     }
-    .linda-img {
-        border-radius: 50%;
-        max-width: 80%;
+    .about-linda {
+        padding: 1rem;
     }
 </style>

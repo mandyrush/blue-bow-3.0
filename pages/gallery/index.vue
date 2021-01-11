@@ -163,7 +163,6 @@
                         featured: 'assets/gallery/sarah/thumbnail_1',
                         cardTitle: 'Floral Halo Veil'
                     },
-
                     {
                         id: 11,
                         thumbnails: [
