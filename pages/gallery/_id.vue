@@ -214,8 +214,6 @@
     .selected-card-description {
         display: flex;
         justify-content: center;
-        // background: url('~assets/gallery/gallery_detail_bkgd2.png') no-repeat bottom right;
-        // background-size: contain;
     }
     .selected-card-title {
         padding: 1rem;
